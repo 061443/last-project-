@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbaariye School | Admission Form</title>
+        <link rel="stylesheet" href="style.css">m   
+</head>
+<body>
+
+    <header>
+        <div class="logo">Barbaariye <span>School</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery & Classes</a></li>
+                <li><a href="booking.html" class="active">Admission Form</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section" style="padding: 4rem 5%;">
+            <h2 style="font-family: var(--font-heading); font-size: 2.5rem; text-align:center; margin-bottom: 2rem; color: var(--primary-color);">Foomka Codsiga Waxbarashada</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Xogta Ardayda New-ga ah</legend>
+                    
+                    <label for="student_name">Magaca Buuxa ee Ardaygii:</label>
+                    <input type="text" id="student_name" name="student_name" placeholder="Magaca oo afar xaraf ah" required minlength="4">
+
+                    <label for="parent_email">Email-ka Waalidka:</label>
+                    <input type="email" id="parent_email" name="parent_email" placeholder="waalid@gmail.com" required>
+
+                    <label for="parent_phone">Talefanka Nomber-ka:</label>
+                    <input type="tel" id="parent_phone" name="parent_phone" placeholder="061XXXXXXX" pattern="[0-9]{9,10}" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Faahfaahinta Heerka Codsiga</legend>
+
+                    <label for="dob">Taariikhda Dhalashada:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="level">Heerka uu codsanayo:</label>
+                    <select id="level" name="level" required>
+                        <option value="">Dooro heerka fasalka...</option>
+                        <option value="primary">Primary (Dugsiga Hoose)</option>
+                        <option value="intermediate">Intermediate (Dugsiga Dhexe)</option>
+                        <option value="secondary">Secondary (Dugsiga Sare)</option>
+                    </select>
+
+                    <label>Xilliga Waxbarashada ee Door bidayso:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="morning" name="shift" value="morning" checked>
+                        <label for="morning">Galitaanka Subaxda</label>
+                        
+                        <input type="radio" id="afternoon" name="location" value="afternoon">
+                        <label for="afternoon">Galitaanka Galabta</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">Gub Codsiga (Submit Application)</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Barbaariye School. Xuquuqda waa dhowran tahay.</p>
+    </footer>
+
+</body>
+</html>
